@@ -6,8 +6,7 @@ router.get('/', () => {
     page: 'Home',
   }
 })
-// Store operation is not working in popstman.
-// other methods are working properly in the postman
+
 router.post('/moments', [MomentsController, 'store'])
 router.get('/moments', [MomentsController, 'index'])
 router.get('/moments/:id', [MomentsController, 'show'])
